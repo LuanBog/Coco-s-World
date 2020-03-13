@@ -30,7 +30,7 @@ def create_pet(name):
 def display_information(pet):
     info = pet.get_information()
 
-    print("Name: {}\nHealth: {}\nThirst: {}\nEnergy: {}\nHygine: {}\nID: {}".format(info["name"], info["health"], info["thirst"], info["energy"], info["hygine"], info["id"]))
+    print("Name: {}\Hunger: {}\nThirst: {}\nEnergy: {}\nHygine: {}\nID: {}".format(info["name"], info["hunger"], info["thirst"], info["energy"], info["hygine"], info["id"]))
 
 def buy_pet():
     print("$" + str(player.money))
@@ -47,14 +47,16 @@ def buy_pet():
 def get_all_pets():
     return pets
 
+
+
 class Pet(object):
     def __init__(self, name):
         self.name = name
-        self.health = 100
+        self.hunger = 100
         self.thirst = 100
         self.energy = 100
         self.hygine = 100
         self.id = generate(amount=random.randint(20, 30))
 
     def get_information(self):
-        return {"name": self.name, "health": self.health, "thirst": self.thirst, "energy": self.energy, "hygine": self.hygine, "id": self.id}   
+        return {"name": self.name, "hunger": self.hunger, "thirst": self.thirst, "energy": self.energy, "hygine": self.hygine, "id": self.id}   

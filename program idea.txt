@@ -9,7 +9,7 @@ TASKS:
 
 - Pet Object /
 	- Name /
-	- Health /
+	- Hunger /
 	- Thirst /
 	- Energy /
 	- Hygine /
@@ -26,3 +26,9 @@ TASKS:
 - Make it cleaner! /
 
 - Can only make pets when have enough money (100) /
+
+- Hunger, Thirst, Energy, and Hygine gets decreased by a rate of time
+	- Hunger
+	- Thirst
+	- Energy
+	- Hygine
