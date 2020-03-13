@@ -17,5 +17,6 @@ TASKS:
 
 - Show Pet Information /
 
-- Create "player" python script to store player variables & functions
-	- Money
+- Create "player" python script to store player variables & functions /
+	- Money /
+	- Increase, Decrease, Set Money /
