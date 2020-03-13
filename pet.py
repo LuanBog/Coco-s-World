@@ -1,4 +1,5 @@
 import random
+import player
 
 pets = []
 
@@ -30,6 +31,18 @@ def display_information(pet):
     info = pet.get_information()
 
     print("Name: {}\nHealth: {}\nThirst: {}\nEnergy: {}\nHygine: {}\nID: {}".format(info["name"], info["health"], info["thirst"], info["energy"], info["hygine"], info["id"]))
+
+def buy_pet():
+    print("$" + str(player.money))
+
+    if player.money >= prize:
+        name = input("Please name your new pet! ")
+
+        create_pet(name)
+        player.decrease_money(prize)
+    else:
+        print("You don't have enough money to buy a pet!")
+
 
 def get_all_pets():
     return pets
