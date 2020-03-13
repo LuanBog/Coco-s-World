@@ -1,0 +1,18 @@
+GOAL:
+
+Virtual Pet Simulator
+For those who are missing the cute factor in their work, a virtual pet simulator is a fun standard project. First pick a type of creature like an animal or some type of monster to design, but beginners can start with a basic circle to represent the pet. Once you’ve chosen your concept, give your pet a name, age, and other properties like health and happiness. You might also want to keep in mind physics concepts like movement, gravity, and inertia. Depending on your experience and whether you’re opting for a 2D or 3D model, your pet and its background can come many different ways. You can also customize features on your pet, like programming specific responses to stimuli. This is a great project because you can continuously revisit and improve as you develop your skills.
+
+Languages: Python, HTML/CSS, JavaScript
+
+TASKS:
+
+-Pet Object
+	-Name
+	-Health
+	-Thirst
+	-Energy
+	-Hygine
+	-ID
+
+-Show Pet Information
