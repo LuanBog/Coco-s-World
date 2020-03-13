@@ -7,12 +7,15 @@ Languages: Python, HTML/CSS, JavaScript
 
 TASKS:
 
--Pet Object /
-	-Name /
-	-Health /
-	-Thirst /
-	-Energy /
-	-Hygine /
-	-ID /
+- Pet Object /
+	- Name /
+	- Health /
+	- Thirst /
+	- Energy /
+	- Hygine /
+	- ID /
 
--Show Pet Information /
+- Show Pet Information /
+
+- Create "player" python script to store player variables & functions
+	- Money

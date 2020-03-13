@@ -23,8 +23,11 @@ class Pet(object):
         self.thirst = 100
         self.energy = 100
         self.hygine = 100
-        self.ID = generate(amount=random.randint(20, 30))
+        self.id = generate(amount=random.randint(20, 30))
 
     def get_info(self):
-        return {"name": self.name, "health": self.health, "thirst": self.thirst, "energy": self.energy, "hygine": self.hygine, "id": self.ID}
-        
+        return {"name": self.name, "health": self.health, "thirst": self.thirst, "energy": self.energy, "hygine": self.hygine, "id": self.id}   
+
+    def display_information(self):
+        print("Name: {}\nHealth: {}\nThirst: {}\nEnergy: {}\nHygine: {}\nID: {}".format(self.name, self.health, self.thirst, self.energy, self.hygine, self.id))
+
