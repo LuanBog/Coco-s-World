@@ -7,12 +7,3 @@ Languages: Python, HTML/CSS, JavaScript
 
 TASKS:
 
--Pet Object
-	-Name
-	-Health
-	-Thirst
-	-Energy
-	-Hygine
-	-ID
-
--Show Pet Information

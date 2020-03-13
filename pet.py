@@ -25,6 +25,6 @@ class Pet(object):
         self.hygine = 100
         self.ID = generate(amount=random.randint(20, 30))
 
-    def give_info(self):
+    def get_info(self):
         return {"name": self.name, "health": self.health, "thirst": self.thirst, "energy": self.energy, "hygine": self.hygine, "id": self.ID}
         
