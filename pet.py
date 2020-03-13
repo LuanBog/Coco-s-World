@@ -1,5 +1,7 @@
 import random
 
+pets = []
+
 def generate(amount=8):
     token = ""
     
@@ -16,6 +18,18 @@ def generate(amount=8):
         
     return str(token)
 
+def create_pet(name):
+    new_pet = Pet(name)
+    pets.append(new_pet)
+
+def display_information(pet):
+    info = pet.get_information()
+
+    print("Name: {}\nHealth: {}\nThirst: {}\nEnergy: {}\nHygine: {}\nID: {}".format(info["name"], info["health"], info["thirst"], info["energy"], info["hygine"], info["id"]))
+
+def get_all_pets():
+    return pets
+
 class Pet(object):
     def __init__(self, name):
         self.name = name
@@ -25,9 +39,5 @@ class Pet(object):
         self.hygine = 100
         self.id = generate(amount=random.randint(20, 30))
 
-    def get_info(self):
+    def get_information(self):
         return {"name": self.name, "health": self.health, "thirst": self.thirst, "energy": self.energy, "hygine": self.hygine, "id": self.id}   
-
-    def display_information(self):
-        print("Name: {}\nHealth: {}\nThirst: {}\nEnergy: {}\nHygine: {}\nID: {}".format(self.name, self.health, self.thirst, self.energy, self.hygine, self.id))
-

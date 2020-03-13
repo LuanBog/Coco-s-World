@@ -20,3 +20,7 @@ TASKS:
 - Create "player" python script to store player variables & functions /
 	- Money /
 	- Increase, Decrease, Set Money /
+
+- Pet maker /
+
+- Make it cleaner! /
