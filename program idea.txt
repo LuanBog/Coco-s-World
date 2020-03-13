@@ -25,4 +25,4 @@ TASKS:
 
 - Make it cleaner! /
 
-- Can only make pets when have enough money (100)
+- Can only make pets when have enough money (100) /
