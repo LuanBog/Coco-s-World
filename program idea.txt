@@ -24,3 +24,5 @@ TASKS:
 - Pet maker /
 
 - Make it cleaner! /
+
+- Can only make pets when have enough money (100)

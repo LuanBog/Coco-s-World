@@ -2,6 +2,8 @@ import random
 
 pets = []
 
+prize = 100
+
 def generate(amount=8):
     token = ""
     
@@ -19,6 +21,8 @@ def generate(amount=8):
     return str(token)
 
 def create_pet(name):
+    global pets
+
     new_pet = Pet(name)
     pets.append(new_pet)
 
