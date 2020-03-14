@@ -32,3 +32,5 @@ TASKS:
 	- Thirst /
 	- Energy / 
 	- Hygine /
+
+-Fix decrease stat (Problem: While loop makes all functions unrunnable "Research: Threads")

@@ -15,7 +15,7 @@ def create_pet(name):
 def display_information(pet):
     info = pet.get_information()
 
-    print("Name: {}\Hunger: {}\nThirst: {}\nEnergy: {}\nHygine: {}\nID: {}".format(info["name"], info["hunger"], info["thirst"], info["energy"], info["hygine"], info["id"]))
+    print("Name: {}\nHunger: {}\nThirst: {}\nEnergy: {}\nHygine: {}\nID: {}".format(info["name"], info["hunger"], info["thirst"], info["energy"], info["hygine"], info["id"]))
 
 def buy_pet():
     print("$" + str(player.money))
@@ -28,9 +28,13 @@ def buy_pet():
     else:
         print("You don't have enough money to buy a pet!")
 
-
-def get_all_pets():
-    return pets
+def get_pet(name=""):
+    if name:
+        for pet in pets:
+            if pet.name.lower() == name.lower():
+                return pet
+    else:
+        return pets
 
 class Pet(object):
     def __init__(self, name):
@@ -41,8 +45,8 @@ class Pet(object):
         self.hygine = 100
         self.id = generate_id(amount=random.randint(20, 30))
 
-        while True:
-            self.decrease_stats(0.00001)
+        # while True:
+        #     self.decrease_stats(0.00001)
 
     def get_information(self):
         return {"name": self.name, "hunger": self.hunger, "thirst": self.thirst, "energy": self.energy, "hygine": self.hygine, "id": self.id}   
