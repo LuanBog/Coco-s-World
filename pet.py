@@ -44,22 +44,20 @@ class Pet(object):
         while True:
             self.decrease_stats(0.00001)
 
-            print(self.hunger, self.thirst, self.energy, self.hygine)
-
     def get_information(self):
         return {"name": self.name, "hunger": self.hunger, "thirst": self.thirst, "energy": self.energy, "hygine": self.hygine, "id": self.id}   
 
     def decrease_stats(self, amount):   
-        if self.hunger > 1:
+        if self.hunger >= 0:
             self.hunger -= amount
 
-        if self.thirst > 1:
+        if self.thirst >= 0:
             self.thirst -= amount
 
-        if self.energy > 1:
+        if self.energy >= 0:
             self.energy -= amount
 
-        if self.hygine > 1:
+        if self.hygine >= 0:
             self.hygine -= amount
         
     
